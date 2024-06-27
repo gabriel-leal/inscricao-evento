@@ -31,8 +31,18 @@
                     <p><input type="tel" name="telefone" id="itel" required autocomplete="tel" placeholder="Ex: (16) 99123-4567"></p>
                     <div id="membro">
                         <p>Você é membro da igreja ou convidado?</p>
-                        <p><input type="radio" name="mem" id="imem"><label for="imem">Membro</label></p>
+                        <p><input type="radio" name="mem" id="imem" required checked><label for="imem">Membro</label></p>
                         <p><input type="radio" name="mem" id="iconv"><label for="imem">Convidado</label></p>
+                    </div>
+                    <div id="direitos">
+                        <p><input type="checkbox" name="direitos" id="idireitos" required>Eu concordo com os Termos e Direitos <button onclick="showmodal()">Ler mais</button></p>
+                        <dialog>
+                            <p>A Lei 13709/2018 - Lei Geral de Proteção de Dados (LGPD) estabelece como fundamento o respeito à privacidade. Desse modo, o presente Termo de Privacidade tem o propósito de comunicar de forma simples quais tipos de dados pessoais serão coletados, quando, de que forma e para quais finalidades serão utilizados. 
+                                A privacidade é um direito conferido a todo indivíduo, está protegida pela lei brasileira e consiste na habilidade que este tem de controlar a exposição de informações sobre sua vida pessoal, sua intimidade, bem como a disponibilidade de dados sobre si mesmo, de retificar, ratificar ou apagar estes e de proteger a confidencialidade de suas comunicações, seu domicílio, sua imagem, honra e reputação perante terceiros. 
+                                Este termo é uma extensão da Política Geral de Privacidade da UFPR, disponível em <a href="https://lgpd.ufpr.br/portal/documentos/" target="_blank">https://lgpd.ufpr.br/portal/documentos/</a> e questões não tratadas aqui estarão lá descritas.
+                            </p>
+                            <button onclick="hidemodal()">Voltar</button>  
+                        </dialog>
                     </div>
                     <div id="msg" class="error"></div>
                     <input type="submit" value="Enviar">
@@ -40,6 +50,7 @@
             </div>
         </section>
     </main>
+    <!-- meu script -->
     <script src="scripts/inscricao.js"></script>
 </body>
 </html>

@@ -13,12 +13,13 @@
         background-color: #E5EFFF;
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     main {
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 115vh;
     }
 
     section#cadastro {
@@ -91,6 +92,63 @@
         width: 10%;
     }
 
+    div#direitos > p > input {
+        margin-top: 30px;
+        display: inline-block;
+        width: 10%;
+    }
+
+    div#direitos button {
+        font-size: 1em;
+        font-weight: bold;
+        background-color: white;
+        color: #4470B1;
+        border: 0px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    div#direitos dialog{
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+        margin: auto;
+        width: 80%;
+        padding: 20px;
+        background-color: #adcaf7;
+    }
+
+    div#direitos dialog p {
+        text-align: center;
+    } 
+    
+    div#direitos dialog a {
+        color: #051c42;
+    }
+
+    div#direitos dialog a:hover {
+        color: #2362c9;
+        text-decoration: none;
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    div#direitos dialog button {
+        background-color: #06265B;
+        color: white;
+        border-radius: 3px;
+        text-decoration: none;
+        border: 3px solid black;
+        padding: 3px;
+        margin-top: 10px;
+    }
+
+    div#direitos button:hover {
+        text-decoration: none;
+    }
+
     input::placeholder {
         padding-left: 7px;
     }
@@ -144,6 +202,10 @@
     div#formulario > p {
         font-size: 1em;
         margin: 15px 0px;
+    }
+
+    div#direitos dialog {
+        width: 50%;
     }
 
 }
