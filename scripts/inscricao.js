@@ -2,7 +2,7 @@ const modal = document.querySelector("dialog")
 
 function showmodal() {
     modal.showModal()
-    modal.scrollTop = 0;
+    modal.scrollTop = 1;
 }
 
 function hidemodal() {
