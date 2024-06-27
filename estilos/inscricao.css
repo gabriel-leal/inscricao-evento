@@ -121,14 +121,10 @@
     div#direitos dialog p {
         text-align: center;
     } 
-    
-    div#direitos dialog a {
-        color: #051c42;
-    }
 
-    div#direitos dialog a:hover {
-        color: #2362c9;
-        text-decoration: none;
+    div#direitos dialog h1{
+        font-size: 1.3em;
+        padding: 0px 2px 10px 15px;
     }
 
     dialog::backdrop {
