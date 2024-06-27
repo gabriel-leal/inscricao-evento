@@ -36,12 +36,13 @@
 
     section#cadastro > div#imagem {
         display: block;
-        background: url(../imagens/logos/Logo.png) no-repeat;
+        background: url(../imagens/logos/logoiccf2T.png) no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 230px;
-        width: 262px;
+        height: 250px;
+        width: 287px;
         margin: auto;
+        margin-top: 20px;
     }
 
     section#cadastro > div#formulario {
