@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+    /* Mobile Fist */
+@media screen  {
+    * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+    body, html {
+        background-color: #E5EFFF;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section#cadastro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        background-color: white;
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
+        transform: translate(-50%, -50%);
+    }
+
+    section#cadastro > div#imagem {
+        display: block;
+        background: url(../imagens/logos/Logo.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 230px;
+        width: 262px;
+        margin: auto;
+    }
+
+    section#cadastro > div#formulario {
+        display: block;
+        padding: 9px;
+    }
+
+    div#formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    div#formulario > p {
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    form {
+        font-size: 1.1em;
+    }
+
+    form > p {
+        padding-bottom: 5px;
+    }
+
+    input {
+        font-size: 1.1em;
+        border-radius: 8px;
+        width: 100%;
+        outline: 0;
+        padding: 0px 0px 0px 10px;
+    }
+
+    input:focus-within {
+        background-color: #E5EFFF;
+    }
+
+    div#membro{
+        padding-top: 10px;
+    }
+
+    div#membro > p > input {
+        margin-top: 10px;
+        display: inline-block;
+        width: 10%;
+    }
+
+    input::placeholder {
+        padding-left: 7px;
+    }
+
+    form > input[type=date] {
+        padding-left: 2px;
+
+    }
+
+    form > input[type=submit] {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-color: #06265B;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    form > input[type=submit]:hover {
+        background-color: #4470B1;
+
+    }
+
+    div#msg {
+        padding-top: 10px;
+        font-size: 1.1em;
+
+    }
+
+    .error {
+        color: red;
+    }
+    .success {
+        color: green;
+    }
+}
+
+
+    /* Tablet e desktops */
+@media screen and (min-width: 769px) { 
+    
+    section#cadastro {
+        width: 500px;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 15px 0px;
+    }
+
+}

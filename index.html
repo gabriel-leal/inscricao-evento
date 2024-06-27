@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="../imagens/logos/favicon.png" type="image/x-icon">
+     <!-- Mobile Fist -->
+     <link rel="stylesheet" href="estilos/inscricao.css">
+     <!-- Média Queries -->
+     <link rel="stylesheet" href="estilos/inscricaoMQ.css">
+     <!-- jQuery-->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <title>ICCF</title>
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="imagem">
+                <!-- Aqui vai a logo da igreja no CSS -->
+            </div>
+            <div id="formulario">
+                <p>Seja Bem-Vindo(a), aqui está a inscrição para o nosso Evento!</p>
+                <form action="#" method="post">
+                    <p><label for="inome">Nome Completo: </label></p>
+                    <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
+                    <p><label for="idata">Data De Nascimento: </label></p>
+                    <p><input type="text" name="datanasc" id="idata" required autocomplete="bday" placeholder="Ex: 01/11/1965"></p>
+                    <p><label for="itel">Telefone: </label></p>
+                    <p><input type="tel" name="telefone" id="itel" required autocomplete="tel" placeholder="Ex: (16) 99123-4567"></p>
+                    <div id="membro">
+                        <p>Você é membro da igreja ou convidado?</p>
+                        <p><input type="radio" name="mem" id="imem"><label for="imem">Membro</label></p>
+                        <p><input type="radio" name="mem" id="iconv"><label for="imem">Convidado</label></p>
+                    </div>
+                    <div id="msg" class="error"></div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/inscricao.js"></script>
+</body>
+</html>
