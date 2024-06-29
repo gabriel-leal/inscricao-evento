@@ -6,11 +6,14 @@ let mem =  document.getElementById('imem')
 let conv = document.getElementById('iconv')
 let direitos = document.getElementById('idireitos')
 
+
+// abre o dialog
 function showmodal() {
     modal.showModal()
-    modal.scrollTop()
+    modal.scrollTop = 0
 }
 
+// fecha o dialog
 function hidemodal() {
     modal.close()
 }
