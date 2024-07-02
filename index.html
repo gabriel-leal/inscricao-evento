@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Favicon -->
      <link rel="shortcut icon" href="../imagens/logos/favicon.png" type="image/x-icon">
-     <!-- Mobile Fist -->
+     <!-- CSS -->
      <link rel="stylesheet" href="estilos/inscricao.css">
-     <!-- Média Queries -->
-     <link rel="stylesheet" href="estilos/inscricaoMQ.css">
      <!-- jQuery-->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <title>Inscrição do Evento</title>
+    <title>Inscrição do Evento ICCF</title>
 </head>
 <body>
     <main>
         <section id="cadastro">
             <div id="imagem">
-                <!-- Aqui vai a logo da igreja no CSS -->
+                <!-- Aqui vai a logo do evento no CSS -->
             </div>
             <div id="formulario">
                 <p>Seja Bem-Vindo(a), aqui está a inscrição para o nosso Evento!</p>
-                <form action="#" method="post">
+                <form action="#" id="idform" method="post" autocomplete="on">
                     <p><label for="inome">Nome Completo: </label></p>
                     <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
                     <p><label for="idata">Data De Nascimento: </label></p>
@@ -74,7 +72,7 @@
                         </dialog>
                     </div>
                     <div id="msg" class="error"></div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Inscrever-se">
                 </form>
             </div>
         </section>
