@@ -4,7 +4,7 @@ from sqlite3 import Error
 def create_connect(db_file):
     conn = None
     try:
-        conn - sqlite3.connect(db_file)
+        conn = sqlite3.connect(db_file)
     except Error as error:
         print(error)
         

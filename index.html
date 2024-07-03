@@ -10,7 +10,7 @@
      <!-- jQuery-->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <title>Inscrição do Evento ICCF</title>
+    <title>Inscrição</title>
 </head>
 <body>
     <main>
@@ -19,7 +19,6 @@
                 <!-- Aqui vai a logo do evento no CSS -->
             </div>
             <div id="formulario">
-                <p>Seja Bem-Vindo(a), aqui está a inscrição para o nosso Evento!</p>
                 <form action="#" id="idform" method="post" autocomplete="on">
                     <p><label for="inome">Nome Completo: </label></p>
                     <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
@@ -72,7 +71,8 @@
                         </dialog>
                     </div>
                     <div id="msg" class="error"></div>
-                    <input type="submit" value="Inscrever-se">
+                    <input id="btn" type="submit" value="Inscrever-se">
+                    <a href="#">Deseja adicionar dependentes?</a>
                 </form>
             </div>
         </section>

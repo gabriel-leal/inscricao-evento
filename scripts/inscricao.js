@@ -1,8 +1,10 @@
 let servidorapi = "http://localhost:8080"
 let servidorweb = "http://localhost:8000"
+let cont = 0
 
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
+    cont ++
     let nome = document.getElementById('inome').value;
     let datanas = document.getElementById('idata').value;
     let tel = document.getElementById('itel').value;
@@ -12,7 +14,10 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     } else {  
         mem = false      
     }  
-
+    // bloqueia o botão após duas tentatativas
+    if (cont >= 2) {
+        btn = document.getElementById('btn').disabled = true;
+    }
     let inscricao = {"nome": `${nome}`, "datanas": `${datanas}`, "telefone": `${tel}`, "membro": `${mem}`}
 
     fetch(`${servidorapi}/inscricao`, {
@@ -22,20 +27,20 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         },
         body: JSON.stringify(inscricao)
     }).then(res => res.json()).then(data => {
-        console.log(data)
         const message = document.getElementById('msg');
         message.textContent = data;
         // teste de inscrição já existente
         if (data == "jaexiste") {
-            message.textContent = 'Cadastro já existe!';
+            message.textContent = 'Inscrição já existe!';
             message.classList.remove('success');
             message.classList.add('error');
         } else {
-            message.textContent = 'Cadastro realizado com sucesso!';
+            message.textContent = 'Inscrição realizado com sucesso!';
             message.classList.remove('error');
             message.classList.add('success');
-            //window.location.href = `${servidorweb}/Templetes/login.html`
-        }
+            let param = JSON.parse(data)
+            window.location.href = `${servidorweb}/inscrito.html?id=` + param['id'] + '&nome=' + param['nome']
+        }        
     })
 
 });
