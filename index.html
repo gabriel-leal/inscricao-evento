@@ -32,7 +32,7 @@
                         <p><input type="radio" name="mem" id="iconv"><label for="iconv">Convidado</label></p>
                     </div>
                     <div id="direitos">
-                        <p><input type="checkbox" name="direitos" id="idireitos">Eu concordo com o Termo de Privacidade <button onclick="showmodal()">Ler mais</button></p>
+                        <p><input type="checkbox" name="direitos" id="idireitos" required>Eu concordo com o Termo de Privacidade <button type="button" onclick="showmodal()">Ler mais</button></p>
                         <dialog>
                             <h1>Política de Privacidade</h1>
                             <p>
@@ -67,7 +67,7 @@
                                 Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos os usuários sobre quaisquer mudanças significativas através do site ou por e-mail.
                                 Agradecemos pela confiança em compartilhar suas informações conosco e estamos comprometidos em proteger sua privacidade.
                             </p>
-                            <button onclick="hidemodal()">Voltar</button>  
+                            <button type="button" onclick="hidemodal()">Voltar</button>  
                         </dialog>
                     </div>
                     <div id="msg" class="error"></div>
