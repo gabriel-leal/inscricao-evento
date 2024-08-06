@@ -1,7 +1,3 @@
-let servidorapi = "http://localhost:8080"
-let servidorweb = "http://localhost:8000"
-let cont = 0
-
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
     cont ++
@@ -18,30 +14,6 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     if (cont >= 2) {
         btn = document.getElementById('btn').disabled = true;
     }
-    // let inscricao = {"nome": `${nome}`, "datanas": `${datanas}`, "telefone": `${tel}`, "membro": `${mem}`}
-
-    // fetch(`${servidorapi}/inscricao`, {
-    //     method: 'post',
-    //     headers: {
-    //         'content-type': 'application/json'
-    //     },
-    //     body: JSON.stringify(inscricao)
-    // }).then(res => res.json()).then(data => {
-    //     const message = document.getElementById('msg');
-    //     message.textContent = data;
-    //     // teste de inscrição já existente
-    //     if (data == "jaexiste") {
-    //         message.textContent = 'Inscrição já existe!';
-    //         message.classList.remove('success');
-    //         message.classList.add('error');
-    //     } else {
-    //         message.textContent = 'Inscrição realizado com sucesso!';
-    //         message.classList.remove('error');
-    //         message.classList.add('success');
-    //         let param = JSON.parse(data)
-    //         window.location.href = `${servidorweb}/inscrito.html?id=` + param['id'] + '&nome=' + param['nome']
-    //     }        
-    // })
     sessionStorage.setItem('nome', nome)
     window.location.href = `/inscrito.html`
 });
