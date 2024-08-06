@@ -10,7 +10,8 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         mem = false      
     }  
     console.log(`nome: ${nome} / data de nascimento: ${datanas} / telefone: ${tel} / membro: ${mem}`)
-    window.localStorage('nome', nome)
+    window.sessionStorage.setItem('nome', nome)
+    window.location.href = "inscrito.html";
 });
 
 const modal = document.querySelector("dialog")
