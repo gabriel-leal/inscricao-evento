@@ -20,7 +20,6 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        overflow: hidden;
         background-color: white;
         width: 330px;
         height: auto;
@@ -63,6 +62,44 @@
         background-color: #E5EFFF;
     }
 
+    main  p > a {
+        color: #06265B;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    main p > a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #06265B;
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    footer h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        padding: 10px;
+
+    }
+
+    footer p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+
+    footer p > a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -84,5 +121,9 @@
     table {
         width: 500px;
         font-size: 1.2em;
+    }
+
+    footer p > a:hover{
+        text-decoration: none;
     }
 }

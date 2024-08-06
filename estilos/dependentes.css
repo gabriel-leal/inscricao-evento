@@ -20,6 +20,7 @@
         position: relative;
         width: 100vw;
         height: 100vh;
+        margin-bottom: 25px;
     }
 
     section#cadastro {
@@ -54,6 +55,13 @@
     div#formulario > h1 {
         text-align: center;
         margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 1.2em;
+    }
+
+    div#formulario > h1 > span{
+        font-weight: bolder;
+        font-size: 1.2em;
     }
 
     form {
@@ -77,70 +85,13 @@
     }
 
     div#membro{
-        padding-top: 10px;
+        padding: 10px;
     }
 
     div#membro > p > input {
         margin-top: 10px;
         display: inline-block;
         width: 10%;
-    }
-
-    div#direitos > p > input {
-        margin-top: 30px;
-        display: inline-block;
-        width: 10%;
-    }
-
-    input#idireitos {
-        cursor: pointer;
-    }
-
-    div#direitos button {
-        font-size: 1em;
-        font-weight: bold;
-        background-color: white;
-        color: #4470B1;
-        border: 0px;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    div#direitos dialog{
-        border: none;
-        border-radius: .5rem;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
-        margin: auto;
-        width: 80%;
-        padding: 20px;
-        background-color: #adcaf7;
-    }
-
-    div#direitos dialog p {
-        text-align: center;
-    } 
-
-    div#direitos dialog h1{
-        font-size: 1.3em;
-        padding: 0px 2px 10px 15px;
-    }
-
-    dialog::backdrop {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    div#direitos dialog button {
-        background-color: #06265B;
-        color: white;
-        border-radius: 3px;
-        text-decoration: none;
-        border: 3px solid black;
-        padding: 3px;
-        margin-top: 10px;
-    }
-
-    div#direitos button:hover {
-        text-decoration: none;
     }
 
     input::placeholder {
@@ -152,31 +103,48 @@
 
     }
 
-    form > input[type=submit] {
-        display: block;
-        font-size: 1em;
-        width: 100%;
-        height: 40px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        background-color: #06275b;
-        color: rgb(255, 255, 255);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    form > input[type=submit]:hover {
-        background-color: #4470B1;
-    }
-
     div#msg {
         padding-top: 10px;
         font-size: 1.1em;
 
     }
 
+    form a {
+        color: #06265B;
+        margin-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+
+    form a:hover {
+        text-decoration: none;
+    }
+
+    button#nvdependente {
+        display: block;
+        margin: auto;
+        padding: 5px;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    button#enviar {
+        display: block;
+        margin: auto;
+        width: 260px;
+        border-radius: 3px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: #06265B;
+        color: white;
+        cursor: pointer;
+    }
+
     footer {
+        margin-top: 9px;
         background-color: #06265B;
         color: white;
         text-align: center;
@@ -222,8 +190,18 @@
         margin: 15px 0px;
     }
 
-    div#direitos dialog {
-        width: 50%;
+    form a {
+        margin-left: 109px;
+        font-size: 1.1em;
+    }
+
+    button#nvdependente {
+        font-size: 1.1em;
+    }
+
+    button#enviar {
+        width: 400px;
+        font-size: 1.1em;
     }
 
     footer p > a:hover{

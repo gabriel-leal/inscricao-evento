@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Favicon -->
-     <link rel="shortcut icon" href="../imagens/logos/favicon.png" type="image/x-icon">
+     <link rel="shortcut icon" href="imagens/logos/favicon.png" type="image/x-icon">
      <!-- CSS -->
      <link rel="stylesheet" href="estilos/inscricao.css">
      <!-- jQuery-->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <title>Inscrição</title>
+    <title>Inscrição do Evento ICCF</title>
 </head>
 <body>
     <main>
@@ -20,14 +20,14 @@
             </div>
             <div id="formulario">
                 <form action="#" id="idform" method="post" autocomplete="on">
-                    <p><label for="inome">Nome Completo: </label></p>
+                    <p><label for="inome">*Nome Completo: </label></p>
                     <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
-                    <p><label for="idata">Data De Nascimento: </label></p>
+                    <p><label for="idata">*Data De Nascimento: </label></p>
                     <p><input type="text" name="datanasc" id="idata" required autocomplete="bday" placeholder="Ex: 01/11/1965"></p>
-                    <p><label for="itel">Telefone: </label></p>
+                    <p><label for="itel">*Telefone: </label></p>
                     <p><input type="tel" name="telefone" id="itel" required autocomplete="tel" placeholder="Ex: (16) 99123-4567"></p>
                     <div id="membro">
-                        <p>Você é membro da igreja ou convidado?</p>
+                        <p>*Você é membro da igreja ou convidado?</p>
                         <p><input type="radio" name="mem" id="imem" required checked><label for="imem">Membro</label></p>
                         <p><input type="radio" name="mem" id="iconv"><label for="iconv">Convidado</label></p>
                     </div>
@@ -71,15 +71,14 @@
                         </dialog>
                     </div>
                     <div id="msg" class="error"></div>
-                    <input id="btn" type="submit" value="Inscrever-se">
-                    <a href="#">Deseja adicionar dependentes?</a>
+                    <input id="btn-send" type="submit" value="Inscrever-se">
                 </form>
             </div>
         </section>
     </main>
     <footer>
         <h1>Duvida?</h1>
-        <p>Qualquer duvida chame o Gabriel no WhatsApp <a href="https://wa.me/5516992137076">Clicando aqui</a></p>
+        <p>Qualquer duvida chame o Gabriel no WhatsApp <a href="https://wa.me/5516992137076" target="_blank">Clicando aqui</a></p>
     </footer>
     <!-- meu script -->
     <script src="scripts/inscricao.js"></script>
