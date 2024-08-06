@@ -1,6 +1,5 @@
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
-    cont ++
     let nome = document.getElementById('inome').value;
     let datanas = document.getElementById('idata').value;
     let tel = document.getElementById('itel').value;
@@ -10,12 +9,8 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     } else {  
         mem = false      
     }  
-    // bloqueia o botão após duas tentatativas
-    if (cont >= 2) {
-        btn = document.getElementById('btn').disabled = true;
-    }
-    sessionStorage.setItem('nome', nome)
-    window.location.href = `/inscrito.html`
+    console.log(`nome: ${nome} / data de nascimento: ${datanas} / telefone: ${tel} / membro: ${mem}`)
+    window.localStorage('nome', nome)
 });
 
 const modal = document.querySelector("dialog")
