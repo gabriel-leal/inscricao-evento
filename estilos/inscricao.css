@@ -26,10 +26,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        overflow: hidden;
         background-color: white;
-        width: 300px;
-        height: auto;
+        min-width: 300px;
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
         transform: translate(-50%, -50%);
@@ -40,8 +38,8 @@
         background: url(../imagens/logos/logoiccf2T.png) no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 250px;
-        width: 287px;
+        min-height: 250px;
+        max-width: 287px;
         margin: auto;
         margin-top: 20px;
     }
@@ -114,7 +112,7 @@
         height: auto;
         max-height: 80vh;
         overflow-y: auto;
-        width: 80%;
+        min-width: 80%;
         padding: 20px;
         background-color: #adcaf7;
     }
@@ -183,7 +181,6 @@
         background-color: #06265B;
         color: white;
         text-align: center;
-        padding-bottom: 10px;
     }
 
     footer h1 {
@@ -222,7 +219,7 @@
 @media screen and (min-width: 769px) { 
 
     section#cadastro {
-        width: 500px;
+        min-width: 500px;
     }
 
     div#formulario > p {
@@ -231,7 +228,8 @@
     }
 
     div#direitos dialog {
-        width: 50%;
+        max-width: 50%;
+        height: 400px;
     }
 
     div#direitos dialog h1 {
