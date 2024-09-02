@@ -18,8 +18,9 @@ const modal = document.querySelector("dialog")
 
 // abre o dialog
 function showmodal() {
+    const heading = document.getElementById('myheading')
     modal.showModal()
-    modal.scrollTop = 0
+    heading.focus()
 }
 
 // fecha o dialog
