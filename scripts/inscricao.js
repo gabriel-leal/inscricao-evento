@@ -19,12 +19,14 @@ const modal = document.querySelector("dialog")
 // abre o dialog
 function showmodal() {
     modal.showModal()
-    modal.querySelector('h1').focus();
+    modal.scrollTop = 0;
+    document.body.classList.add('no-scroll')
 }
 
 // fecha o dialog
 function hidemodal() {
     modal.close()
+    document.body.classList.remove('no-scroll')
 }
 
 // máscaras de formulário

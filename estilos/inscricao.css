@@ -111,6 +111,9 @@
         border-radius: .5rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
         margin: auto;
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
         width: 80%;
         padding: 20px;
         background-color: #adcaf7;
@@ -207,6 +210,11 @@
     .success {
         color: green;
     }
+    .no-scroll{
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
 }
 
 
@@ -224,6 +232,10 @@
 
     div#direitos dialog {
         width: 50%;
+    }
+
+    div#direitos dialog h1 {
+        text-align: center;
     }
 
     footer p > a:hover{
