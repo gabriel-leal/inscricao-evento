@@ -15,11 +15,13 @@ document.getElementById('formulario').addEventListener('submit', function(event)
 });
 
 const modal = document.querySelector("dialog")
+const btnD = modal.querySelector("button")
 
 // abre o dialog
 function showmodal() {
     modal.showModal()
-    modal.scrollTo({ top: 0, behavior: 'smooth' });
+    btnD.blur()
+    modal.scrollTop = 0
     document.body.classList.add('no-scroll')
 }
 
