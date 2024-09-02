@@ -19,7 +19,7 @@ const modal = document.querySelector("dialog")
 // abre o dialog
 function showmodal() {
     modal.showModal()
-    modal.scrollTop = 0;
+    modal.scrollTo({ top: 0, behavior: 'smooth' });
     document.body.classList.add('no-scroll')
 }
 
