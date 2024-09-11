@@ -82,6 +82,7 @@
 
     div#membro{
         padding-top: 10px;
+        color: #193B62;
     }
 
     div#membro > p > input {
@@ -94,6 +95,10 @@
         margin-top: 30px;
         display: inline-block;
         width: 10%;
+    }
+
+    div#direitos p {
+        color: #193B62;
     }
 
     input#idireitos {
