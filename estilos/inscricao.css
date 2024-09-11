@@ -10,7 +10,7 @@
     }
 
     body, html {
-        background-color: #E5EFFF;
+        background-color: #f5d0ec;
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
@@ -35,7 +35,7 @@
 
     section#cadastro > div#imagem {
         display: block;
-        background: url(../imagens/logos/logoiccf2T.png) no-repeat;
+        background: url(../imagens/Transparente.png) no-repeat;
         background-position: center center;
         background-size: cover;
         min-height: 250px;
@@ -52,6 +52,10 @@
     div#formulario > h1 {
         text-align: center;
         margin-bottom: 10px;
+    }
+
+     p label, p input  {
+        color: #193B62;
     }
 
     form {
@@ -71,7 +75,7 @@
     }
 
     input:focus-within {
-        background-color: #E5EFFF;
+        background-color: #d750b633;
     }
 
     div#membro{
@@ -98,7 +102,7 @@
         font-size: 1em;
         font-weight: bold;
         background-color: white;
-        color: #4470B1;
+        color:  #8B4696;
         border: 0px;
         text-decoration: underline;
         cursor: pointer;
@@ -114,7 +118,7 @@
         overflow-y: auto;
         min-width: 80%;
         padding: 20px;
-        background-color: #adcaf7;
+        background-color: #ec5991;
     }
 
     div#direitos dialog p {
@@ -131,7 +135,7 @@
     }
 
     div#direitos dialog button {
-        background-color: #06265B;
+        background-color: #51348F;
         color: white;
         border-radius: 3px;
         text-decoration: none;
@@ -160,7 +164,7 @@
         height: 40px;
         margin-top: 10px;
         margin-bottom: 5px;
-        background-color: #06275b;
+        background-color: #51348F;
         color: rgb(255, 255, 255);
         border: none;
         border-radius: 5px;
@@ -178,7 +182,7 @@
     }
 
     footer {
-        background-color: #06265B;
+        background-color: #8B4696;
         color: white;
         text-align: center;
     }
@@ -220,6 +224,7 @@
 
     section#cadastro {
         min-width: 500px;
+        margin-top: 20px;
     }
 
     div#formulario > p {
@@ -234,6 +239,11 @@
 
     div#direitos dialog h1 {
         text-align: center;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-bottom: 10px;
     }
 
     footer p > a:hover{
