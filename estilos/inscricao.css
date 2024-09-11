@@ -10,7 +10,9 @@
     }
 
     body, html {
-        background-color: #f5d0ec;
+        background: url(../imagens/fundo.png) no-repeat;
+        background-position: center center;
+        background-size: auto;
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
@@ -35,7 +37,7 @@
 
     section#cadastro > div#imagem {
         display: block;
-        background: url(../imagens/Transparente.png) no-repeat;
+        background: url(../imagens/logo-evento.png) no-repeat;
         background-position: center center;
         background-size: cover;
         min-height: 250px;
@@ -118,7 +120,7 @@
         overflow-y: auto;
         min-width: 80%;
         padding: 20px;
-        background-color: #ec5991;
+        background-color: #F5E9F9;
     }
 
     div#direitos dialog p {
@@ -185,13 +187,7 @@
         background-color: #8B4696;
         color: white;
         text-align: center;
-    }
-
-    footer h1 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2em;
         padding: 10px;
-
     }
 
     footer p {
