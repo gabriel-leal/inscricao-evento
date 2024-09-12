@@ -26,7 +26,7 @@
         width: 330px;
         height: auto;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
         transform: translate(-50%, -50%);
     }
 
@@ -51,7 +51,7 @@
         border-collapse: collapse;
         width: 300px;
         border: 2px solid black;
-        box-shadow: 3px 2px 9px 0px rgba(0, 0, 0, 0.226);
+        box-shadow: 3px 2px 9px 0px rgba(0, 0, 0, 0.281);
         text-align: center;
         margin: auto;
     }
